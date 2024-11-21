@@ -1,15 +1,23 @@
 <?php
 
+// $int = 24;
+// $float = 45.67;
+// $string = 'ciao';
+// $boolean = true ;
 
-$int = 25;
-$float = 45.36 ;
-$string= 'Ciao Daniele';
-$bool = true;
+// var_dump($int);
+// var_dump($float);
+// var_dump($string);
+// var_dump($boolean);
+const INTERO = 23;
+const VIRGOLA = 34.76;
+const STRINGA = 'CIAO';
+const BOOLEANO = TRUE;
+
+var_dump(INTERO);
+var_dump(VIRGOLA);
+var_dump(STRINGA);
+var_dump(BOOLEANO);
 
 
-var_dump( $int, $float, $string , $bool );
 
-const INTEGER = $string;
-const FLOAT = $float;
-const STRING = $string;
-const BOOL = $bool;
