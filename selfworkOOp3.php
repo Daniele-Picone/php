@@ -2,68 +2,91 @@
 
 class Vertebrates{
 
-    protected function stampa(){
-       echo "io Sono un animale vertebrato";
+
+    public function __construct() {
+        $this->stampaVertebrates();
+        
+    }
+    protected function stampaVertebrates(){
+       echo "io Sono un animale vertebrato \n";
     }
   
   }
   // categopry WarmBlodded
   class WarmBlodded extends Vertebrates{
     
-  
-      protected function stampa(){
-          parent::stampa();
-        echo "Sono un animale a sangue Caldo";
+    public function __construct(){
+        parent::__construct();
+        $this->stampaWarmBlodded();
+    }
+      protected function stampaWarmBlodded(){
+        echo "Sono un animale a sangue Caldo \n";
       }
       
   }
   
   class Lion extends WarmBlodded{
-  
-      protected function stampa(){
-          parent::stampa();
-          echo "Sono il re degli animali";
+  public function __construct(){
+      parent::__construct();
+    $this->stampalion();
+  }
+      protected function stampalion(){
+          echo "Sono il re degli animali \n";
       }
   }
   
   class Bird extends WarmBlodded{
-      protected function stampa(){
-          parent::stampa();
-          echo "sono un volatile";
+    public function __construct(){
+        parent::__construct();
+        $this->stampaBird();
+    }
+      protected function stampaBird(){
+          echo "sono un volatile \n";
       }
   }
   
   // category coldBlooded
   
   class coldBlooded extends Vertebrates{
-  
-      protected function stampa(){
-          parent::stampa();
-          echo "sono un animale a sangue freddo";
+     public function __construct(){
+         parent::__construct();
+        $this-> stampaColdBlooded();
+     }
+      protected function stampaColdBlooded(){
+          echo "sono un animale a sangue freddo \n";
   
       }
   }
   
   class Fish extends ColdBlooded{
-  
-      protected function stampa(){
-          parent::stampa();
-           echo "Splah!";
+     
+    public function __construct(){
+        parent::__construct();
+        $this-> stampaFish();
+    }
+      protected function stampaFish(){
+           echo "Splah! \n";
       }
   }
   
   class reptiles extends ColdBlooded{
-      protected function stampa(){
-          parent::stampa();
-          echo "sono un animale che vive su terra ferma";
+
+    public function __construct(){
+        parent::__construct();
+        $this->stampaReptiles();
+    }
+      protected function stampaReptiles(){
+          echo "sono un animale che vive su terra ferma \n";
       }
   }
   
   class Amphibians extends ColdBlooded{
-     
-      protected function stampa(){
-          parent::stampa();
-          echo " vivo sia in acqua che sulla terra ferma";
+     public function __construct(){
+         parent::__construct();
+        $this->stampaAmphibians();
+     }
+      protected function stampaAmphibians(){
+          echo " vivo sia in acqua che sulla terra ferma \n";
       }
   
   }
@@ -72,10 +95,12 @@ class Vertebrates{
 
   
   
-  
+  $lion = new Lion();
+  $bird = new Bird();
   $fish = new Fish ();
+  $amphibians = new Amphibians();
+  $reptiles = new reptiles(); 
  
-  $fish->stampa();
 
 
 ?>
