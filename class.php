@@ -50,3 +50,5 @@ $attulità->getMyCategory();
 $sport->getMyCategory();
 $gossip->getMyCategory();
 $Storia->getMyCategory();
+
+
