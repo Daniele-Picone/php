@@ -46,9 +46,9 @@ $gossip = new Gossip();
 $Storia = new Storia();
 
 
-$attulità->getMyCategory();
-$sport->getMyCategory();
-$gossip->getMyCategory();
-$Storia->getMyCategory();
+// $attulità->getMyCategory();
+// $sport->getMyCategory();
+// $gossip->getMyCategory();
+// $Storia->getMyCategory();
 
 
