@@ -38,7 +38,6 @@ class MarkVII extends Armatura{
 
   class Hulkbuster extends Armatura{
 
-
     public function getIndosso(){
      echo  "La Hulkbuster è stata indossata ";
     }

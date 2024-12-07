@@ -16,9 +16,7 @@ class Repulsori extends Armi{
         echo "Inizo Attacco con forti fasci di energia";
     }
 }
-
 class Missili extends Armi{
-
 
     public function equipaggiamento(){
         echo "Lancia razzi equipaggiato";
